@@ -11,7 +11,7 @@ public class MovieDomain {
     @Id
     @GeneratedValue
     private int movieId;
-    public int  count;
+    private int  count;
     private String movieName;
     private Date dateproduct;
 

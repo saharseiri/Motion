@@ -12,22 +12,6 @@ public class MotionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MotionApplication.class, args);
-
-		
-
-		MovieDomain movie = new MovieDomain();
-		movie.setMovieName("ali");
-		movie.setDateproduct(new Date());
-		movie.setCount(movie.count++);
-
-		MusicDomain music = new MusicDomain();
-		music.setMusicName("mohamad");
-		music.setSinger(new String());
-		music.setCount(music.count++);
-
-
-		System.out.println(movie.count);
-		System.out.println(music.count);
 	}
 
 }

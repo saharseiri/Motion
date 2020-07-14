@@ -10,7 +10,7 @@ public class MusicDomain {
     @Id
     @GeneratedValue
     private int musicId;
-    public int count;
+    private int count;
     private String musicName;
     private String singer;
 
