@@ -18,12 +18,12 @@ public class MotionApplication {
 		MovieDomain movie = new MovieDomain();
 		movie.setMovieName("ali");
 		movie.setDateproduct(new Date());
-		movie.count++;
+		movie.setCount(movie.count++);
 
 		MusicDomain music = new MusicDomain();
 		music.setMusicName("mohamad");
-		music.setSinger(new Singer());
-		music.count++;
+		music.setSinger(new String());
+		music.setCount(music.count++);
 
 
 		System.out.println(movie.count);

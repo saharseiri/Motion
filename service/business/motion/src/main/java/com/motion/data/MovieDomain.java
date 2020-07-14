@@ -11,15 +11,25 @@ public class MovieDomain {
     @Id
     @GeneratedValue
     private int movieId;
+    public int  count;
     private String movieName;
     private Date dateproduct;
 
     public MovieDomain() {
     }
 
-    public MovieDomain(String movieName, Date dateproduct) {
+    public MovieDomain(int count, String movieName, Date dateproduct) {
+        this.count = count;
         this.movieName = movieName;
         this.dateproduct = dateproduct;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public int getmovieId() {

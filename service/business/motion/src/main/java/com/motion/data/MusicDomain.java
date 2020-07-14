@@ -10,15 +10,25 @@ public class MusicDomain {
     @Id
     @GeneratedValue
     private int musicId;
+    public int count;
     private String musicName;
     private String singer;
 
     public MusicDomain() {
     }
 
-    public MusicDomain(String musicName, String singer) {
+    public MusicDomain(int count, String musicName, String singer) {
+        this.count = count;
         this.musicName = musicName;
         this.singer = singer;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public int getMusicId() {
